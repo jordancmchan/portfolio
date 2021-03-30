@@ -1,0 +1,751 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #A8DADC;
+  height: 80vh;
+}
+
+header .headerContainer {
+  padding: 20vh 10%;
+  line-height: 35px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 8rem;
+  font-family: 'Oswald', sans-serif;
+  display: inline;
+}
+
+header h1 span {
+  font-size: 8rem;
+  font-family: 'Oswald', sans-serif;
+  -webkit-text-decoration: underline 3px solid #E63946;
+          text-decoration: underline 3px solid #E63946;
+  color: #E63946;
+}
+
+header h1:first-child {
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+header h2 {
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 3px;
+  margin-top: 0;
+}
+
+header a {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #F1FAEE;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #E63946;
+  padding: 0px 50px;
+  border: 3px double #E63946;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+header a:hover {
+  border: 3px double #F1FAEE;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header a:nth-child(2) {
+  margin-left: 10px;
+}
+
+.aboutMeSection {
+  background-image: url(/assets/layered-peaks-haikei.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #457B9D;
+  padding-top: 21vh;
+  padding-bottom: 5vh;
+}
+
+.aboutMeSection h2 {
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  color: #F1FAEE;
+  background-color: #E63946;
+  margin: 0;
+  z-index: -1;
+  padding-left: 12.5%;
+  width: 21.6%;
+  height: 3.4rem;
+  line-height: 2.94rem;
+  letter-spacing: 3px;
+  border-bottom: 1.5px #F1FAEE solid;
+}
+
+.aboutMeSection .aboutMeContainer {
+  padding-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutMeSection .aboutMeContainer img {
+  border-bottom: 3px solid #E63946;
+}
+
+.aboutMeSection .aboutMeContainer .aboutMeDescription {
+  width: 400px;
+  height: 400px;
+  background-color: #F1FAEE;
+  border-bottom: 3px solid #E63946;
+  padding: 20px 0 20px 20px;
+}
+
+.aboutMeSection .aboutMeContainer .aboutMeDescription h1 {
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  color: #E63946;
+  margin: 0;
+}
+
+.aboutMeSection .aboutMeContainer .aboutMeDescription h4 {
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0;
+}
+
+.aboutMeSection .aboutMeContainer .aboutMeDescription p {
+  padding-right: 20px;
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+}
+
+.skills {
+  background-image: url(/assets/layered-peaks-haikei-skill.png);
+  background-size: cover;
+  background-color: #1D3557;
+  padding: 15vh 0 15vh;
+}
+
+.skills h2 {
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  color: #F1FAEE;
+  background-color: #E63946;
+  height: 3.4rem;
+  margin: 0;
+  line-height: 2.94rem;
+  margin-left: 50%;
+  letter-spacing: 3px;
+  text-align: center;
+  border-bottom: 1.5px #F1FAEE solid;
+}
+
+.skills .resumeSkillContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% auto;
+      grid-template-columns: 15% auto;
+  margin-top: 10vh;
+}
+
+.skills .resumeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.skills .resumeContainer h3 {
+  font-size: 2.5rem;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0;
+  color: #F1FAEE;
+}
+
+.skills .resumeContainer i {
+  color: #F1FAEE;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+}
+
+.skills .resumeContainer a {
+  background-color: #E63946;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #F1FAEE;
+}
+
+.skills .skillsContainer {
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.skills .skillsContainer ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  padding-left: 0;
+  row-gap: 20px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.skills .skillsContainer ul .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skillsContainer ul .skill i {
+  font-size: 2.5rem;
+  color: #E63946;
+  background-color: #F1FAEE;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1.5px solid #E63946;
+}
+
+.skills .skillsContainer ul .skill li {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #F1FAEE;
+  -webkit-text-decoration: underline #E63946 1.5px;
+          text-decoration: underline #E63946 1.5px;
+}
+
+.projectsContainer {
+  background-image: url(/assets/layered-peaks-haikei-project.png);
+  background-color: #F1FAEE;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.projectsContainer h2 {
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  color: #F1FAEE;
+  background-color: #E63946;
+  margin: 0;
+  z-index: -1;
+  padding-left: 12.5%;
+  width: 21.6%;
+  height: 6.4rem;
+  line-height: 3rem;
+  letter-spacing: 3px;
+  border-bottom: 1.5px #F1FAEE solid;
+}
+
+.projectsContainer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectsContainer .projectOne,
+.projectsContainer .projectTwo,
+.projectsContainer .projectThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10vh 0 10vh;
+}
+
+.projectsContainer .projectOne img,
+.projectsContainer .projectTwo img,
+.projectsContainer .projectThree img {
+  width: 300px;
+}
+
+.projectsContainer .projectOne .projectDescription,
+.projectsContainer .projectTwo .projectDescription,
+.projectsContainer .projectThree .projectDescription {
+  width: 300px;
+  height: 500px;
+  padding: 0px 0px 50px;
+  background-color: #F1FAEE;
+  border-bottom: 3px solid #E63946;
+}
+
+.projectsContainer .projectOne .projectDescription h3,
+.projectsContainer .projectTwo .projectDescription h3,
+.projectsContainer .projectThree .projectDescription h3 {
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  color: #E63946;
+  margin: 0;
+}
+
+.projectsContainer .projectOne .projectDescription h4,
+.projectsContainer .projectTwo .projectDescription h4,
+.projectsContainer .projectThree .projectDescription h4 {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0 10px;
+}
+
+.projectsContainer .projectOne .projectDescription p,
+.projectsContainer .projectTwo .projectDescription p,
+.projectsContainer .projectThree .projectDescription p {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0 10px;
+}
+
+.projectsContainer .projectOne .projectDescription .projectSkillContainer,
+.projectsContainer .projectTwo .projectDescription .projectSkillContainer,
+.projectsContainer .projectThree .projectDescription .projectSkillContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+}
+
+.projectsContainer .projectOne .projectDescription .projectSkillContainer i,
+.projectsContainer .projectTwo .projectDescription .projectSkillContainer i,
+.projectsContainer .projectThree .projectDescription .projectSkillContainer i {
+  font-size: 2.5rem;
+  color: #E63946;
+  padding-right: 10px;
+}
+
+.projectsContainer .projectOne .projectDescription .liveLinks,
+.projectsContainer .projectTwo .projectDescription .liveLinks,
+.projectsContainer .projectThree .projectDescription .liveLinks {
+  padding: 10px 0 10px;
+}
+
+.projectsContainer .projectOne .projectDescription .liveLinks .devicon-github-original-wordmark,
+.projectsContainer .projectTwo .projectDescription .liveLinks .devicon-github-original-wordmark,
+.projectsContainer .projectThree .projectDescription .liveLinks .devicon-github-original-wordmark {
+  padding: 9px 10px 11px 10px;
+}
+
+.projectsContainer .projectOne .projectDescription .liveLinks a,
+.projectsContainer .projectTwo .projectDescription .liveLinks a,
+.projectsContainer .projectThree .projectDescription .liveLinks a {
+  color: #E63946;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.projectsContainer .projectOne .projectDescription .liveLinks a i,
+.projectsContainer .projectTwo .projectDescription .liveLinks a i,
+.projectsContainer .projectThree .projectDescription .liveLinks a i {
+  background-color: #F1FAEE;
+  padding: 10px;
+  font-size: 2rem;
+  border: 3px double #E63946;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.projectsContainer .projectOne .projectDescription .liveLinks a i:hover,
+.projectsContainer .projectTwo .projectDescription .liveLinks a i:hover,
+.projectsContainer .projectThree .projectDescription .liveLinks a i:hover {
+  border: none;
+  border: 3px double #F1FAEE;
+  color: #F1FAEE;
+  background-color: #E63946;
+}
+
+.contactsPageContainer {
+  background-image: url(/assets/layered-peaks-haikei-footer.png);
+  background-color: #F1FAEE;
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 40px;
+}
+
+.contactsPageContainer .contactsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactsPageContainer .contactsContainer form {
+  padding-bottom: 20px;
+}
+
+.contactsPageContainer .contactsContainer form fieldset {
+  border: none;
+}
+
+.contactsPageContainer .contactsContainer form fieldset .nameEmailContainer {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contactsPageContainer .contactsContainer form fieldset .nameEmailContainer input[type="text"] {
+  margin-bottom: 7px;
+}
+
+.contactsPageContainer .contactsContainer form fieldset .nameEmailContainer input[type="text"],
+.contactsPageContainer .contactsContainer form fieldset .nameEmailContainer input[type="email"] {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  opacity: 0.5;
+  outline: none;
+}
+
+.contactsPageContainer .contactsContainer form fieldset .nameEmailContainer input[type="text"]:focus,
+.contactsPageContainer .contactsContainer form fieldset .nameEmailContainer input[type="email"]:focus {
+  opacity: 1;
+}
+
+.contactsPageContainer .contactsContainer form fieldset textarea {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+.contactsPageContainer .contactsContainer form fieldset textarea:focus {
+  opacity: 1;
+}
+
+.contactsPageContainer .contactsContainer .contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+  padding-left: 10px;
+}
+
+.contactsPageContainer .contactsContainer .contactInfo h2 {
+  margin: 0;
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  color: #E63946;
+}
+
+.contactsPageContainer .contactsContainer .contactInfo .contactLinks {
+  padding: 10px 0 10px;
+  border-bottom: 3px #E63946 solid;
+}
+
+.contactsPageContainer .contactsContainer .contactInfo .contactLinks a {
+  margin: 0 10px 0 0;
+  text-decoration: none;
+}
+
+.contactsPageContainer .contactsContainer .contactInfo .contactLinks a i {
+  color: #E63946;
+  font-size: 2rem;
+  background-color: #F1FAEE;
+  border: 3px double #E63946;
+  padding: 11px 10px 10px 10px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.contactsPageContainer .contactsContainer .contactInfo .contactLinks a i:hover {
+  font-size: 2rem;
+  color: #F1FAEE;
+  background-color: #E63946;
+  border: 3px double #F1FAEE;
+}
+
+footer {
+  background-color: #f1faee;
+}
+
+footer p {
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+}
