@@ -86,31 +86,36 @@ header {
   .aboutMeContainer {
     padding-top: 10vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     img {
       border-bottom: 3px solid $red;
     }
 
     .aboutMeDescription {
-      width: 400px;
-      height: 400px;
+      // width: 400px;
+      // height: 400px;
       background-color: $babyBlue;
       border-bottom: 3px solid $red;
       padding: 20px 0 20px 20px;
+
       h1 {
         @include headerFont(4rem);
-        color: $red;
         margin: 0;
+        span{
+          @include headerFont(4rem);
+          border-bottom: 3px solid $red;
+          color:$red;
+        }
       }
       h4 {
         @include headerFont(1rem);
-        margin-top: 0;
+        // margin-top: 0;
       }
       p {
         padding-right: 20px;
         @include bodyFont(1.4rem);
-        line-height: 20px;
+        line-height: 1.5;
       }
     }
   }
@@ -152,7 +157,7 @@ header {
       color: $babyBlue;
       span{
         @include headerFont(2.5rem);
-        background: linear-gradient(to top, $red 50%, transparent 50%)
+        background: linear-gradient(to top, $red 50%, transparent 50%);
       }
     }
     i{
@@ -183,13 +188,12 @@ header {
       margin-top: 0;
       padding-left: 0;
       row-gap: 20px;
-      justify-self: end;
+      align-self: end;
 
       .skill {
         display: flex;
         flex-direction: column;
         align-items: center;
-
         i {
           font-size: 2.5rem;
           color: $red;

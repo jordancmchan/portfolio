@@ -335,9 +335,9 @@ header a:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .aboutMeSection .aboutMeContainer img {
@@ -345,8 +345,6 @@ header a:nth-child(2) {
 }
 
 .aboutMeSection .aboutMeContainer .aboutMeDescription {
-  width: 400px;
-  height: 400px;
   background-color: #F1FAEE;
   border-bottom: 3px solid #E63946;
   padding: 20px 0 20px 20px;
@@ -355,21 +353,26 @@ header a:nth-child(2) {
 .aboutMeSection .aboutMeContainer .aboutMeDescription h1 {
   font-size: 4rem;
   font-family: 'Oswald', sans-serif;
-  color: #E63946;
   margin: 0;
+}
+
+.aboutMeSection .aboutMeContainer .aboutMeDescription h1 span {
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: 3px solid #E63946;
+  color: #E63946;
 }
 
 .aboutMeSection .aboutMeContainer .aboutMeDescription h4 {
   font-size: 1rem;
   font-family: 'Oswald', sans-serif;
-  margin-top: 0;
 }
 
 .aboutMeSection .aboutMeContainer .aboutMeDescription p {
   padding-right: 20px;
   font-size: 1.4rem;
   font-family: 'Open Sans', sans-serif;
-  line-height: 20px;
+  line-height: 1.5;
 }
 
 .skills {
@@ -462,8 +465,8 @@ header a:nth-child(2) {
   margin-top: 0;
   padding-left: 0;
   row-gap: 20px;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  -ms-grid-row-align: end;
+      align-self: end;
 }
 
 .skills .skillsContainer ul .skill {
