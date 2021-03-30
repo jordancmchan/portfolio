@@ -89,7 +89,6 @@ header {
     justify-content: center;
 
     img {
-      // box-shadow: 15px 15px $red;
       border-bottom: 3px solid $red;
     }
 
@@ -145,11 +144,16 @@ header {
   .resumeContainer{
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
+    justify-content: center;
+
     h3{
       @include headerFont(2.5rem);
       margin-top: 0;
       color: $babyBlue;
+      span{
+        @include headerFont(2.5rem);
+        background: linear-gradient(to top, $red 50%, transparent 50%)
+      }
     }
     i{
       color: $babyBlue;
@@ -162,6 +166,12 @@ header {
       @include bodyFont(1.5rem);
       text-decoration: none;
       color: $babyBlue;
+      border: 3px double $red;
+
+      &:hover {
+        border: 3px double $babyBlue;
+        transition: 0.3s;
+      }
     }
   }
 
@@ -170,9 +180,11 @@ header {
     ul {
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
+      margin-top: 0;
       padding-left: 0;
       row-gap: 20px;
       justify-self: end;
+
       .skill {
         display: flex;
         flex-direction: column;
