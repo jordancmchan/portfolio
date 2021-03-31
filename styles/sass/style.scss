@@ -67,7 +67,6 @@ header {
   background-size: cover;
   background-color: $mediumBlue;
   padding-top: 21vh;
-  padding-bottom: 5vh;
 
   h2 {
     @include headerFont(4rem);
@@ -75,8 +74,8 @@ header {
     background-color: $red;
     margin: 0;
     z-index: -1;
-    padding-left: 12.5%;
-    width: 21.6%;
+    padding-left:12.5%;
+    width: 25.6%;
     height: 3.4rem;
     line-height: 2.94rem;
     letter-spacing: 3px;
@@ -125,7 +124,7 @@ header {
   background-image: url(/assets/layered-peaks-haikei-skill.png);
   background-size: cover;
   background-color: $darkBlue;
-  padding: 15vh 0 15vh;
+  padding: 15vh 0 0;
 
   h2 {
     @include headerFont(4rem);
@@ -143,7 +142,8 @@ header {
   .resumeSkillContainer{
     display:grid;
     grid-template-columns: 15% auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
+    padding-bottom: 15vh;
   }
 
   .resumeContainer{
@@ -250,11 +250,16 @@ header {
 
     img {
       width: 300px;
+      transition: all 0.5s;
+
+      &:hover{
+        transform: scale(1.1);
+      }
     }
 
     .projectDescription {
       width: 300px;
-      height: 500px;
+      height: auto;
       padding: 0px 0px 50px;
       background-color: $babyBlue;
       border-bottom: 3px solid $red;
@@ -262,7 +267,7 @@ header {
       h3 {
         @include headerFont(3rem);
         color: $red;
-        margin: 0;
+        margin: 10px 0 10px;
       }
 
       h4 {
@@ -328,7 +333,6 @@ header {
   .contactsContainer {
     display: flex;
     justify-content: center;
-
     form {
          padding-bottom:20px;
       fieldset {
@@ -350,23 +354,44 @@ header {
             outline: none;
             &:focus{
               opacity: 1;
-            }
-
-            
+            }    
+            &:hover{
+              opacity: 1;
+            }        
           }
         }
+        .messageContainer{
+          display: flex;
+          flex-direction: column;
+          textarea {
+            @include bodyFont(1.5rem);
+            margin-top: 30px;
+            border: none;
+            outline: none;
+            resize: none;
+            padding: 10px;
+            opacity: 0.5; 
+    
+            &:focus{
+              opacity: 1;
+            }
+            &:hover{
+              opacity: 1;
+            }
+          }
+    
+          button{
+            @include bodyFont(1.5rem);
+            background-color: $red;
+            color: $babyBlue;
+            border: 3px $red double;
+            padding: 5px 40px;
+            margin: 10px auto;
+            text-align: center;
 
-        textarea {
-          @include bodyFont(1.5rem);
-          margin-top: 30px;
-          border: none;
-          outline: none;
-          resize: none;
-          padding: 10px;
-          opacity: 0.5; 
-
-          &:focus{
-            opacity: 1;
+            &:hover{
+              border: 3px $babyBlue double;
+            }
           }
         }
       }
@@ -418,5 +443,27 @@ footer {
     padding: 5px;
     margin: 0px;
     text-align: center;
+  }
+}
+
+.fixedMenu{
+  display:flex;
+  flex-direction: row-reverse;
+  i{
+    margin: 90vh 50px;
+    font-size: 2rem;
+    position:fixed;
+    display:inline; 
+    padding: 5px 10px;
+    background-color: $babyBlue;
+    color: $red;
+    border-bottom: 2px $red solid;
+    border-radius:5px;
+    &:hover{
+      background-color: $red;
+      color:$babyBlue;
+      border-bottom: 2px $babyBlue solid;
+
+    }
   }
 }
