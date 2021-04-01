@@ -560,8 +560,8 @@ header a:nth-child(2) {
 .projectsContainer .projectOne img:hover,
 .projectsContainer .projectTwo img:hover,
 .projectsContainer .projectThree img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   opacity: 1;
 }
 
