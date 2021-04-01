@@ -508,7 +508,7 @@ header a:nth-child(2) {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  padding-bottom: 15vh;
+  padding-bottom: 5vh;
 }
 
 .projectsContainer h2 {
@@ -598,8 +598,9 @@ header a:nth-child(2) {
 .projectsContainer .projectThree .projectDescription p {
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
+  line-height: 2.5rem;
   margin: 10px 0 0px;
-  height: 115px;
+  height: 175px;
 }
 
 .projectsContainer .projectOne .projectDescription .projectSkillContainer,
@@ -667,7 +668,6 @@ header a:nth-child(2) {
   background-color: #F1FAEE;
   background-size: cover;
   background-position: bottom;
-  padding-bottom: 40px;
 }
 
 .contactsPageContainer .contactsContainer {
@@ -810,7 +810,7 @@ footer {
 }
 
 footer p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: 'Oswald', sans-serif;
   padding: 5px;
   margin: 0px;
