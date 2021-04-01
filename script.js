@@ -39,14 +39,17 @@ portfolio.contactPage = () => {
      
      const submitBtn = document.querySelector('#submitButton')
 
-     submitBtn.addEventListener('click', ()=> {
+     submitBtn.addEventListener('click', (e)=> {
+          e.preventDefault();
           const name = document.querySelector('#name').value
           const email = document.querySelector('#email').value
           const message = document.querySelector('#message').value
-
+          
           console.log(name)
           console.log(email)
           console.log(message)
+
+
      })
      
 }

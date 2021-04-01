@@ -247,13 +247,16 @@ header {
     display: flex;
     flex-direction: column;
     margin: 10vh 0 10vh;
-
+    
     img {
       width: 300px;
       transition: all 0.5s;
+      opacity: 0.5;
+      border-bottom: $red solid 3px; 
 
       &:hover{
         transform: scale(1.1);
+        opacity: 1;
       }
     }
 

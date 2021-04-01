@@ -553,6 +553,8 @@ header a:nth-child(2) {
   width: 300px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  opacity: 0.5;
+  border-bottom: #E63946 solid 3px;
 }
 
 .projectsContainer .projectOne img:hover,
@@ -560,6 +562,7 @@ header a:nth-child(2) {
 .projectsContainer .projectThree img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  opacity: 1;
 }
 
 .projectsContainer .projectOne .projectDescription,
