@@ -842,5 +842,5 @@ footer p {
 .fixedMenu i:hover {
   background-color: #E63946;
   color: #F1FAEE;
-  border-bottom: 2px #F1FAEE solid;
+  border-bottom: 2px #F1FAEE double;
 }
