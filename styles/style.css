@@ -567,7 +567,6 @@ header a:nth-child(2) {
 .projectsContainer .projectThree .projectDescription {
   width: 300px;
   height: auto;
-  padding: 0px 0px 50px;
   background-color: #F1FAEE;
   border-bottom: 3px solid #E63946;
 }
@@ -579,6 +578,7 @@ header a:nth-child(2) {
   font-family: 'Oswald', sans-serif;
   color: #E63946;
   margin: 10px 0 10px;
+  height: 65px;
 }
 
 .projectsContainer .projectOne .projectDescription h4,
@@ -594,7 +594,8 @@ header a:nth-child(2) {
 .projectsContainer .projectThree .projectDescription p {
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
-  margin: 10px 0 10px;
+  margin: 10px 0 0px;
+  height: 115px;
 }
 
 .projectsContainer .projectOne .projectDescription .projectSkillContainer,
@@ -823,10 +824,10 @@ footer p {
 }
 
 .fixedMenu i {
+  display: none;
   margin: 90vh 50px;
   font-size: 2rem;
   position: fixed;
-  display: inline;
   padding: 5px 10px;
   background-color: #F1FAEE;
   color: #E63946;

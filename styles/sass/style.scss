@@ -260,7 +260,6 @@ header {
     .projectDescription {
       width: 300px;
       height: auto;
-      padding: 0px 0px 50px;
       background-color: $babyBlue;
       border-bottom: 3px solid $red;
 
@@ -268,6 +267,7 @@ header {
         @include headerFont(3rem);
         color: $red;
         margin: 10px 0 10px;
+        height: 65px;
       }
 
       h4 {
@@ -277,7 +277,8 @@ header {
 
       p {
         @include bodyFont(1.5rem);
-        margin: 10px 0 10px;
+        margin: 10px 0 0px;
+        height: 115px;
       }
 
       .projectSkillContainer {
@@ -450,10 +451,10 @@ footer {
   display:flex;
   flex-direction: row-reverse;
   i{
+    display:none; 
     margin: 90vh 50px;
     font-size: 2rem;
     position:fixed;
-    display:inline; 
     padding: 5px 10px;
     background-color: $babyBlue;
     color: $red;

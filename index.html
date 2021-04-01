@@ -26,7 +26,7 @@
   <body>
     <header>
       <div class="fixedMenu">
-        <i class="fas fa-caret-up"></i>
+        <i class="fas fa-caret-up" id="homeButton"></i>
       </div>
       <div class="headerContainer wrapper">
         <h1>CODENAME </h1>
@@ -61,7 +61,7 @@
         <div class="resumeSkillContainer , wrapper">
           <div class="resumeContainer">
             <h3>CHECK OUT MY OTHER <span>SKILLS</span></h3>
-            <a href="./assets/layered-peaks-haikei-project.png"download><i class="fas fa-file-export"></i>RESUME</a>
+            <a id="resumeButton" href="./assets/layered-peaks-haikei-project.png" download ><i class="fas fa-file-export" ></i>RESUME</a>
           </div>
           <div class="skillsContainer">
             <ul>
@@ -215,8 +215,9 @@
                     cols="50"
                     rows="10"
                     placeholder="LETS BE FRIENDS"
+                    id="message"
                   ></textarea>
-                  <button>SUBMIT</button>
+                  <button id = "submitButton">SUBMIT</button>
                 </div>
               </fieldset>
             </form>
