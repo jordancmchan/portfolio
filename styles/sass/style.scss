@@ -409,7 +409,11 @@ header {
       display: flex;
       flex-direction: column;
       width: 25%;
-      padding-left: 10px;
+      height: 160px;
+      border-bottom: 3px $red solid;
+      p{
+        @include bodyFont(1.5rem)
+      }
       h2 {
         margin: 0;
         @include headerFont(4rem);
@@ -417,7 +421,6 @@ header {
       }
       .contactLinks {
            padding: 10px 0 10px;
-           border-bottom: 3px $red solid;
 
           a {
           margin: 0 10px 0 0;

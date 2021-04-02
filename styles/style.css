@@ -771,7 +771,13 @@ header a:nth-child(2) {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 25%;
-  padding-left: 10px;
+  height: 160px;
+  border-bottom: 3px #E63946 solid;
+}
+
+.contactsPageContainer .contactsContainer .contactInfo p {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .contactsPageContainer .contactsContainer .contactInfo h2 {
@@ -783,7 +789,6 @@ header a:nth-child(2) {
 
 .contactsPageContainer .contactsContainer .contactInfo .contactLinks {
   padding: 10px 0 10px;
-  border-bottom: 3px #E63946 solid;
 }
 
 .contactsPageContainer .contactsContainer .contactInfo .contactLinks a {

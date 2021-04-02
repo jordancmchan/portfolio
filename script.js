@@ -42,16 +42,31 @@ portfolio.contactPage = () => {
           const name = document.querySelector('#name').value
           const email = document.querySelector('#email').value
           const message = document.querySelector('#message').value
-          
-          const person = {
-               Name: name ,
-               Email: email ,
-               Message: message 
-          }
-          dbRef.push(person)
+          console.log(name)
 
+          if (name === "" || email === "" || message === ""){
+               window.alert('Please fill in form correctly')
+          }else{
+               
+               const person = {
+                    Name: name ,
+                    Email: email ,
+                    Message: message 
+               }
+               dbRef.push(person)
+
+               document.querySelector('form').reset();  
+
+               submitBtn.style.backgroundColor="#00ab66"
+               
+                         setTimeout(function(){
+                              submitBtn.style.backgroundColor = "#E63946"
+                              ;
+                         },5000)
+          }
      })
      
+
 }
 
 
