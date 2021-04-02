@@ -21,6 +21,7 @@ portfolio.fixedMenu = () => {
 portfolio.resumeButton = () => {
 
      const downloadButton = document.querySelector('#resumeButton');
+
      downloadButton.addEventListener('click', () =>{
           const newDiv = document.createElement('div');
           const thankYou = document.createTextNode('Thanks for checking me out!');
@@ -36,7 +37,6 @@ portfolio.resumeButton = () => {
 }
 
 portfolio.contactPage = () => {
-     
      const submitBtn = document.querySelector('#submitButton')
 
      submitBtn.addEventListener('click', (e)=> {
@@ -45,14 +45,13 @@ portfolio.contactPage = () => {
           const email = document.querySelector('#email').value
           const message = document.querySelector('#message').value
           
-          console.log(name)
-          console.log(email)
-          console.log(message)
+          
 
 
      })
      
 }
+
 
 portfolio.init = () => {
      portfolio.fixedMenu(); 
@@ -61,3 +60,4 @@ portfolio.init = () => {
 }
 
 portfolio.init(); 
+
