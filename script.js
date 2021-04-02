@@ -1,5 +1,4 @@
 const portfolio ={}
-
 portfolio.fixedMenu = () => {
      
      const homeButton = document.getElementById('homeButton');
@@ -17,7 +16,6 @@ portfolio.fixedMenu = () => {
           }
      })
 }
-
 portfolio.resumeButton = () => {
 
      const downloadButton = document.querySelector('#resumeButton');
@@ -45,8 +43,12 @@ portfolio.contactPage = () => {
           const email = document.querySelector('#email').value
           const message = document.querySelector('#message').value
           
-          
-
+          const person = {
+               Name: name ,
+               Email: email ,
+               Message: message 
+          }
+          dbRef.push(person)
 
      })
      
