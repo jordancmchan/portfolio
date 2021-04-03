@@ -89,14 +89,13 @@ header {
 
     img {
       border-bottom: 3px solid $red;
-      width:300px;
-      height: 300px;
+      width: 100%;
+      height: auto;
     }
 
     .aboutMeDescription {
-      // width: 500px;
 
-      height: 300px;
+      height: auto;
       background-color: $babyBlue;
       border-bottom: 3px solid $red;
       padding: 20px 0 20px 20px;
@@ -143,80 +142,82 @@ header {
   }
 
   .resumeSkillContainer{
-    display:grid;
-    grid-template-columns: 15% auto;
     margin-top: 15vh;
     padding-bottom: 15vh;
-  }
 
-  .resumeContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    h3{
-      @include headerFont(2.5rem);
-      margin-top: 0;
-      color: $babyBlue;
-      span{
+    .resumeContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content:center;
+      float: left;
+      padding-top: 5vh;
+      h3{
         @include headerFont(2.5rem);
-        background: linear-gradient(to top, $red 50%, transparent 50%);
-      }
-    }
-    i{
-      color: $babyBlue;
-      font-size: 1.5rem;
-      padding: 10px 15px;
-    }
-    
-    a{
-      background-color: $red;
-      @include bodyFont(1.5rem);
-      text-decoration: none;
-      color: $babyBlue;
-      border: 3px double $red;
-
-      &:hover {
-        border: 3px double $babyBlue;
-        transition: 0.3s;
-      }
-    }
-  }
-
-  .skillsContainer {
-    @include bodyFont(3rem);
-    ul {
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-      margin-top: 0;
-      padding-left: 0;
-      row-gap: 20px;
-      align-self: end;
-
-      .skill {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        i {
-          font-size: 2.5rem;
-          color: $red;
-          background-color: $babyBlue;
-          padding: 10px;
-          margin-bottom: 5px;
-          border-bottom: 1.5px solid $red;
+        margin-top: 0;
+        color: $babyBlue;
+        span{
+          @include headerFont(2.5rem);
+          background: linear-gradient(to top, $red 50%, transparent 50%);
         }
-        li {
-          @include bodyFont(1.5rem);
-          list-style: none;
-          text-align: center;
-          margin-bottom: 10px;
-          color: $babyBlue;
-          text-decoration: underline $red 1.5px;
+      }
+      i{
+        color: $babyBlue;
+        font-size: 1.5rem;
+        padding: 10px 15px;
+      }
+      
+      a{
+        background-color: $red;
+        @include bodyFont(1.5rem);
+        text-decoration: none;
+        color: $babyBlue;
+        border: 3px double $red;
+  
+        &:hover {
+          border: 3px double $babyBlue;
+          transition: 0.3s;
         }
       }
     }
+    .skillsContainer {
+      @include bodyFont(3rem);
+      ul {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top: 0;
+        padding-left: 0;
+        row-gap: 20px;
+        align-self: end;
+  
+        .skill {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          i {
+            font-size: 2.5rem;
+            color: $red;
+            background-color: $babyBlue;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-bottom: 1.5px solid $red;
+          }
+          li {
+            @include bodyFont(1.5rem);
+            list-style: none;
+            text-align: center;
+            margin-bottom: 10px;
+            color: $babyBlue;
+            text-decoration: underline $red 1.5px;
+          }
+        }
+      }
+    }
   }
-}
+  }
+
+
+  
 
 .projectsContainer {
   background-image: url(/assets/layered-peaks-haikei-project.png);
@@ -408,7 +409,7 @@ header {
     .contactInfo {
       display: flex;
       flex-direction: column;
-      width: 25%;
+      width: auto;
       height: 160px;
       border-bottom: 3px $red solid;
       p{
@@ -478,3 +479,5 @@ footer {
     }
   }
 }
+
+@import "responsive";

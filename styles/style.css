@@ -341,12 +341,12 @@ header a:nth-child(2) {
 
 .aboutMeSection .aboutMeContainer img {
   border-bottom: 3px solid #E63946;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: auto;
 }
 
 .aboutMeSection .aboutMeContainer .aboutMeDescription {
-  height: 300px;
+  height: auto;
   background-color: #F1FAEE;
   border-bottom: 3px solid #E63946;
   padding: 20px 0 20px 20px;
@@ -399,15 +399,11 @@ header a:nth-child(2) {
 }
 
 .skills .resumeSkillContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 15% auto;
-      grid-template-columns: 15% auto;
   margin-top: 15vh;
   padding-bottom: 15vh;
 }
 
-.skills .resumeContainer {
+.skills .resumeSkillContainer .resumeContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,29 +414,33 @@ header a:nth-child(2) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  float: left;
+  padding-top: 5vh;
 }
 
-.skills .resumeContainer h3 {
+.skills .resumeSkillContainer .resumeContainer h3 {
   font-size: 2.5rem;
   font-family: 'Oswald', sans-serif;
   margin-top: 0;
   color: #F1FAEE;
 }
 
-.skills .resumeContainer h3 span {
+.skills .resumeSkillContainer .resumeContainer h3 span {
   font-size: 2.5rem;
   font-family: 'Oswald', sans-serif;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #E63946), color-stop(50%, transparent));
   background: linear-gradient(to top, #E63946 50%, transparent 50%);
 }
 
-.skills .resumeContainer i {
+.skills .resumeSkillContainer .resumeContainer i {
   color: #F1FAEE;
   font-size: 1.5rem;
   padding: 10px 15px;
 }
 
-.skills .resumeContainer a {
+.skills .resumeSkillContainer .resumeContainer a {
   background-color: #E63946;
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
@@ -449,18 +449,18 @@ header a:nth-child(2) {
   border: 3px double #E63946;
 }
 
-.skills .resumeContainer a:hover {
+.skills .resumeSkillContainer .resumeContainer a:hover {
   border: 3px double #F1FAEE;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.skills .skillsContainer {
+.skills .resumeSkillContainer .skillsContainer {
   font-size: 3rem;
   font-family: 'Open Sans', sans-serif;
 }
 
-.skills .skillsContainer ul {
+.skills .resumeSkillContainer .skillsContainer ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
@@ -472,7 +472,7 @@ header a:nth-child(2) {
       align-self: end;
 }
 
-.skills .skillsContainer ul .skill {
+.skills .resumeSkillContainer .skillsContainer ul .skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +485,7 @@ header a:nth-child(2) {
           align-items: center;
 }
 
-.skills .skillsContainer ul .skill i {
+.skills .resumeSkillContainer .skillsContainer ul .skill i {
   font-size: 2.5rem;
   color: #E63946;
   background-color: #F1FAEE;
@@ -494,7 +494,7 @@ header a:nth-child(2) {
   border-bottom: 1.5px solid #E63946;
 }
 
-.skills .skillsContainer ul .skill li {
+.skills .resumeSkillContainer .skillsContainer ul .skill li {
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
   list-style: none;
@@ -770,7 +770,7 @@ header a:nth-child(2) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25%;
+  width: auto;
   height: 160px;
   border-bottom: 3px #E63946 solid;
 }
@@ -851,4 +851,263 @@ footer p {
   background-color: #E63946;
   color: #F1FAEE;
   border-bottom: 2px #F1FAEE double;
+}
+
+@media (max-width: 1150px) {
+  .projectsContainer .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 100%;
+  }
+  .projectsContainer h2 {
+    margin-bottom: 15vh;
+  }
+  .projectsContainer .projectOne .projectDescription {
+    background-color: transparent;
+  }
+  .projectsContainer .projectTwo .projectHeader {
+    width: 30%;
+  }
+  .projectsContainer .projectOne,
+  .projectsContainer .projectTwo,
+  .projectsContainer .projectThree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 10px 0 20px;
+  }
+  .projectsContainer .projectOne .projectDescription,
+  .projectsContainer .projectTwo .projectDescription,
+  .projectsContainer .projectThree .projectDescription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 700px;
+    height: 200px;
+  }
+  .projectsContainer .projectOne .projectDescription .projectHeader,
+  .projectsContainer .projectTwo .projectDescription .projectHeader,
+  .projectsContainer .projectThree .projectDescription .projectHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectsContainer .projectOne .projectDescription .projectHeader h3,
+  .projectsContainer .projectTwo .projectDescription .projectHeader h3,
+  .projectsContainer .projectThree .projectDescription .projectHeader h3 {
+    margin: 0;
+    height: auto;
+  }
+  .projectsContainer .projectOne .projectDescription .projectHeader .projectSkillContainer,
+  .projectsContainer .projectTwo .projectDescription .projectHeader .projectSkillContainer,
+  .projectsContainer .projectThree .projectDescription .projectHeader .projectSkillContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+  }
+  .projectsContainer .projectOne .projectDescription p,
+  .projectsContainer .projectTwo .projectDescription p,
+  .projectsContainer .projectThree .projectDescription p {
+    margin: 0;
+    width: 60%;
+  }
+  .projectsContainer .projectOne .projectDescription .liveLinks,
+  .projectsContainer .projectTwo .projectDescription .liveLinks,
+  .projectsContainer .projectThree .projectDescription .liveLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .aboutMeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resumeContainer a {
+    text-align: center;
+  }
+  .projectsContainer .wrapper {
+    width: 70%;
+  }
+  .projectsContainer .wrapper .projectTwo .projectHeader {
+    width: 100%;
+  }
+  .projectsContainer .wrapper .projectOne,
+  .projectsContainer .wrapper .projectTwo,
+  .projectsContainer .wrapper .projectThree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .projectsContainer .wrapper .projectOne img,
+  .projectsContainer .wrapper .projectTwo img,
+  .projectsContainer .wrapper .projectThree img {
+    width: 100%;
+    height: auto;
+  }
+  .projectsContainer .wrapper .projectOne .projectDescription,
+  .projectsContainer .wrapper .projectTwo .projectDescription,
+  .projectsContainer .wrapper .projectThree .projectDescription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .projectsContainer .wrapper .projectOne .projectDescription h3,
+  .projectsContainer .wrapper .projectTwo .projectDescription h3,
+  .projectsContainer .wrapper .projectThree .projectDescription h3 {
+    margin: 25px 0 10px;
+  }
+  .projectsContainer .wrapper .projectOne .projectDescription p,
+  .projectsContainer .wrapper .projectTwo .projectDescription p,
+  .projectsContainer .wrapper .projectThree .projectDescription p {
+    padding: 10px 0 10px;
+    height: auto;
+    width: 100%;
+  }
+  .projectsContainer .wrapper .projectOne .projectDescription .projectSkillContainer,
+  .projectsContainer .wrapper .projectTwo .projectDescription .projectSkillContainer,
+  .projectsContainer .wrapper .projectThree .projectDescription .projectSkillContainer {
+    display: inline;
+  }
+  .projectsContainer .wrapper .projectOne .projectDescription .liveLinks,
+  .projectsContainer .wrapper .projectTwo .projectDescription .liveLinks,
+  .projectsContainer .wrapper .projectThree .projectDescription .liveLinks {
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  .contactLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  header .headerContainer {
+    padding-left: 0;
+  }
+  .quickLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutMeDescription h1, .aboutMeDescription h4, .aboutMeDescription p {
+    text-align: center;
+  }
+  .resumeSkillContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .resumeSkillContainer h3 {
+    text-align: center;
+  }
+  .resumeSkillContainer .resumeContainer {
+    width: 100%;
+  }
+  .projectsContainer {
+    padding-bottom: 0;
+  }
+  .contactsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactsContainer fieldset {
+    display: none;
+  }
+  .contactsContainer .contactInfo {
+    width: 100%;
+    height: auto;
+  }
+  .contactsContainer .contactInfo h2 {
+    text-align: center;
+  }
+  .contactsContainer .contactInfo .contactLinks {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 400px) {
+  header .wrapper {
+    width: 100%;
+  }
+  header .headerContainer {
+    padding-left: 10px;
+  }
+  header .headerContainer .quickLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerContainer .quickLinks a {
+    text-align: center;
+  }
+  header .headerContainer .quickLinks a:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
 }
