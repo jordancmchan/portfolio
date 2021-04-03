@@ -201,13 +201,17 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
      header{
           .wrapper{
                width: 100%;
           }
           .headerContainer{
                padding: 20vh 10px 20vh;
+
+               h1{
+                    @include headerFont(4rem)
+               }
                .quickLinks{
                     display:flex;
                     flex-direction:column;

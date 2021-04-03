@@ -1087,12 +1087,16 @@ footer p {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   header .wrapper {
     width: 100%;
   }
   header .headerContainer {
     padding: 20vh 10px 20vh;
+  }
+  header .headerContainer h1 {
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
   }
   header .headerContainer .quickLinks {
     display: -webkit-box;
