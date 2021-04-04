@@ -71,7 +71,7 @@
      }
 }
 
-@media (max-width: 850px){
+@media (max-width: 940px){
      .wrapper{
           width: 100%;
      }
@@ -79,12 +79,10 @@
      .aboutMeContainer{
           flex-direction:column;   
 
-          .profilePhoto{
-               max-height: 100%;
-               width: auto;
-               border: 3px solid $red;
-             
+          img{
+               display: none;
           }
+          
           
      }
 
@@ -165,7 +163,7 @@
 
 }
 
-@media (max-width: 650px){
+@media (max-width: 768px){
 
      header{
           .headerContainer{
@@ -175,6 +173,10 @@
 
      .quickLinks{
           display:flex;
+     }
+
+     .aboutMeContainer{
+          
      }
 
      .aboutMeDescription{
@@ -226,7 +228,7 @@
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
      header{
           .wrapper{
                width: 100%;

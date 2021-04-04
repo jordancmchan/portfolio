@@ -5,7 +5,9 @@
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
+img{
+  max-width: 100%;
+}
 .wrapper {
   width: 75%;
   margin: 0 auto;
@@ -86,19 +88,19 @@ header {
     padding-top: 10vh;
     display:flex;
     justify-content: center;    
-    align-items:center;
+    align-items:flex-start;
 
     img {
       border-bottom: 3px solid $red;
       height: auto;
-      width: 230px;
+      width: 100% ;
     }
 
     .aboutMeDescription {
-      height: auto;
       background-color: $babyBlue;
       border-bottom: 3px solid $red;
       padding: 20px 0 20px 20px;
+      margin-left: 10px;
 
       h1 {
         @include headerFont(4rem);
