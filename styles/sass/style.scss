@@ -88,12 +88,12 @@ header {
     padding-top: 10vh;
     display:flex;
     justify-content: center;    
-    align-items:flex-start;
+    align-items:flex-end;
 
     img {
       border-bottom: 3px solid $red;
       height: auto;
-      width: 100% ;
+      max-width: 30%;
     }
 
     .aboutMeDescription {
