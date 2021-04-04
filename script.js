@@ -7,12 +7,11 @@ portfolio.fixedMenu = () => {
           window.scroll({top: 0, left: 0, behavior: 'smooth'});
      })
      
-     
      window.addEventListener('scroll' , function(){
           if(window.pageYOffset >100 ){
-               homeButton.style.display='inline';
+               homeButton.style.visibility='visible';
           }else{
-               homeButton.style.display='none'
+               homeButton.style.visibility='hidden'
           }
      })
 }

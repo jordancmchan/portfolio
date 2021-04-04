@@ -55,14 +55,15 @@
                     }
 
                     p{
-                         margin: 0;
+
+                         margin-top: 30px;
                          width: 60%;
                     }
 
                     .liveLinks{
                          display:flex;
                          flex-direction:column;
-                         justify-content: space-around;
+                         justify-content: space-between;
                          padding: 0;
                     }
                }

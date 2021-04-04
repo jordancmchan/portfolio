@@ -827,31 +827,29 @@ footer p {
 }
 
 .fixedMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
 
 .fixedMenu i {
-  display: none;
-  margin: 90vh 50px;
+  visibility: visible;
   font-size: 2rem;
   position: fixed;
   padding: 5px 10px;
   background-color: #F1FAEE;
   color: #E63946;
-  border-bottom: 2px #E63946 solid;
+  border-bottom: 3px #E63946 solid;
+  border-top: 1px #E63946 solid;
+  border-left: 1px #E63946 solid;
+  border-right: 1px #E63946 solid;
   border-radius: 5px;
 }
 
 .fixedMenu i:hover {
   background-color: #E63946;
   color: #F1FAEE;
-  border-bottom: 2px #F1FAEE double;
+  border-bottom: 2px #F1FAEE triple;
 }
 
 @media (max-width: 1150px) {
@@ -931,7 +929,7 @@ footer p {
   .projectsContainer .projectOne .projectDescription p,
   .projectsContainer .projectTwo .projectDescription p,
   .projectsContainer .projectThree .projectDescription p {
-    margin: 0;
+    margin-top: 30px;
     width: 60%;
   }
   .projectsContainer .projectOne .projectDescription .liveLinks,
@@ -944,8 +942,9 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
   }
 }

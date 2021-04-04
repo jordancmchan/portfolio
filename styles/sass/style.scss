@@ -458,23 +458,26 @@ footer {
 }
 
 .fixedMenu{
-  display:flex;
-  flex-direction: row-reverse;
+  position:absolute;
+  bottom: 50px;
+  right: 50px;
   i{
-    display:none; 
-    margin: 90vh 50px;
+    visibility:visible; 
     font-size: 2rem;
     position:fixed;
     padding: 5px 10px;
     background-color: $babyBlue;
     color: $red;
-    border-bottom: 2px $red solid;
+    border-bottom: 3px $red solid;
+    border-top: 1px $red solid;
+    border-left: 1px $red solid;
+    border-right: 1px $red solid;
     border-radius:5px;
+
     &:hover{
       background-color: $red;
       color:$babyBlue;
-      border-bottom: 2px $babyBlue double;
-
+      border-bottom: 2px $babyBlue triple;
     }
   }
 }
