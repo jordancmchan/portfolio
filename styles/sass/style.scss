@@ -84,17 +84,17 @@ header {
 
   .aboutMeContainer {
     padding-top: 10vh;
-    display: flex;
-    justify-content: center;
+    display:flex;
+    justify-content: center;    
+    align-items:center;
 
     img {
       border-bottom: 3px solid $red;
-      width: 100%;
       height: auto;
+      width: 230px;
     }
 
     .aboutMeDescription {
-
       height: auto;
       background-color: $babyBlue;
       border-bottom: 3px solid $red;
@@ -141,17 +141,19 @@ header {
     border-bottom: 1.5px $babyBlue solid;
   }
 
-  .resumeSkillContainer{
+  .resumeSkillContainer{ 
+    display:flex;
+    justify-content: center;
     margin-top: 15vh;
     padding-bottom: 15vh;
 
     .resumeContainer{
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-content:center;
-      float: left;
+      align-items:flex-start;
+      width: 20%;
       padding-top: 5vh;
+      
       h3{
         @include headerFont(2.5rem);
         margin-top: 0;
@@ -161,10 +163,10 @@ header {
           background: linear-gradient(to top, $red 50%, transparent 50%);
         }
       }
+
       i{
         color: $babyBlue;
         font-size: 1.5rem;
-        padding: 10px 15px;
       }
       
       a{
@@ -173,7 +175,8 @@ header {
         text-decoration: none;
         color: $babyBlue;
         border: 3px double $red;
-  
+        padding: 7px 25px;
+
         &:hover {
           border: 3px double $babyBlue;
           transition: 0.3s;
@@ -189,7 +192,7 @@ header {
         padding-left: 0;
         row-gap: 20px;
         align-self: end;
-  
+        column-gap: 50px;
         .skill {
           display: flex;
           flex-direction: column;

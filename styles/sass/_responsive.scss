@@ -73,12 +73,26 @@
 @media (max-width: 850px){
 
      .aboutMeContainer{
-          flex-direction:column;
+          flex-direction:column;   
+
+          img{
+               max-height: 100%;
+          }
+          
+          .aboutMeDescription{
+          }
      }
 
-     .resumeContainer{
-          a{
-               text-align:center;
+
+     .resumeSkillContainer{
+          padding-bottom: 0;
+
+          .resumeContainer{
+
+               float: none;
+               a{
+                    text-align:center;
+               }
           }
      }
      
@@ -133,7 +147,7 @@
 
           
      }
-
+     
      .contactLinks{
           display:flex;
           align-items:center;
