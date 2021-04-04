@@ -71,25 +71,34 @@
 }
 
 @media (max-width: 850px){
+     .wrapper{
+          width: 100%;
+     }
 
      .aboutMeContainer{
           flex-direction:column;   
 
-          img{
+          .profilePhoto{
                max-height: 100%;
+               width: auto;
+               border: 3px solid $red;
+             
           }
           
-          .aboutMeDescription{
-          }
      }
 
 
      .resumeSkillContainer{
           padding-bottom: 0;
+          flex-direction: column-reverse;
+
+          .skillsContainer{
+               column-gap: 10px;
+          }
 
           .resumeContainer{
+               margin: 0 auto;
 
-               float: none;
                a{
                     text-align:center;
                }
@@ -174,6 +183,7 @@
      }
 
      .resumeSkillContainer{
+
           display:flex;
           flex-direction:column-reverse;
           
@@ -181,7 +191,7 @@
                text-align:center;
           }
           .resumeContainer{
-               width: 100%;
+               margin: 0 auto;
           }
 
 

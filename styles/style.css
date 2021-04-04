@@ -380,14 +380,14 @@ header a:nth-child(2) {
   line-height: 1.5;
 }
 
-.skills {
+.skillSection {
   background-image: url(/assets/layered-peaks-haikei-skill.png);
   background-size: cover;
   background-color: #1D3557;
   padding: 15vh 0 0;
 }
 
-.skills h2 {
+.skillSection h2 {
   font-size: 4rem;
   font-family: 'Oswald', sans-serif;
   color: #F1FAEE;
@@ -401,18 +401,18 @@ header a:nth-child(2) {
   border-bottom: 1.5px #F1FAEE solid;
 }
 
-.skills .resumeSkillContainer {
+.skillSection .resumeSkillContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 15vh;
   padding-bottom: 15vh;
 }
 
-.skills .resumeSkillContainer .resumeContainer {
+.skillSection .resumeSkillContainer .resumeContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,26 +427,26 @@ header a:nth-child(2) {
   padding-top: 5vh;
 }
 
-.skills .resumeSkillContainer .resumeContainer h3 {
+.skillSection .resumeSkillContainer .resumeContainer h3 {
   font-size: 2.5rem;
   font-family: 'Oswald', sans-serif;
   margin-top: 0;
   color: #F1FAEE;
 }
 
-.skills .resumeSkillContainer .resumeContainer h3 span {
+.skillSection .resumeSkillContainer .resumeContainer h3 span {
   font-size: 2.5rem;
   font-family: 'Oswald', sans-serif;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #E63946), color-stop(50%, transparent));
   background: linear-gradient(to top, #E63946 50%, transparent 50%);
 }
 
-.skills .resumeSkillContainer .resumeContainer i {
+.skillSection .resumeSkillContainer .resumeContainer i {
   color: #F1FAEE;
   font-size: 1.5rem;
 }
 
-.skills .resumeSkillContainer .resumeContainer a {
+.skillSection .resumeSkillContainer .resumeContainer a {
   background-color: #E63946;
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
@@ -456,32 +456,24 @@ header a:nth-child(2) {
   padding: 7px 25px;
 }
 
-.skills .resumeSkillContainer .resumeContainer a:hover {
+.skillSection .resumeSkillContainer .resumeContainer a:hover {
   border: 3px double #F1FAEE;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.skills .resumeSkillContainer .skillsContainer {
-  font-size: 3rem;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.skills .resumeSkillContainer .skillsContainer ul {
+.skillSection .resumeSkillContainer .skillsContainer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
-  margin-top: 0;
-  padding-left: 0;
   row-gap: 20px;
-  -ms-grid-row-align: end;
-      align-self: end;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  width: 100%;
 }
 
-.skills .resumeSkillContainer .skillsContainer ul .skill {
+.skillSection .resumeSkillContainer .skillsContainer .skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,7 +486,7 @@ header a:nth-child(2) {
           align-items: center;
 }
 
-.skills .resumeSkillContainer .skillsContainer ul .skill i {
+.skillSection .resumeSkillContainer .skillsContainer .skill i {
   font-size: 2.5rem;
   color: #E63946;
   background-color: #F1FAEE;
@@ -503,7 +495,7 @@ header a:nth-child(2) {
   border-bottom: 1.5px solid #E63946;
 }
 
-.skills .resumeSkillContainer .skillsContainer ul .skill li {
+.skillSection .resumeSkillContainer .skillsContainer .skill li {
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
   list-style: none;
@@ -959,20 +951,33 @@ footer p {
 }
 
 @media (max-width: 850px) {
+  .wrapper {
+    width: 100%;
+  }
   .aboutMeContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutMeContainer img {
+  .aboutMeContainer .profilePhoto {
     max-height: 100%;
+    width: auto;
+    border: 3px solid #E63946;
   }
   .resumeSkillContainer {
     padding-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .resumeSkillContainer .skillsContainer {
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
   }
   .resumeSkillContainer .resumeContainer {
-    float: none;
+    margin: 0 auto;
   }
   .resumeSkillContainer .resumeContainer a {
     text-align: center;
@@ -1075,7 +1080,7 @@ footer p {
     text-align: center;
   }
   .resumeSkillContainer .resumeContainer {
-    width: 100%;
+    margin: 0 auto;
   }
   .projectsContainer {
     padding-bottom: 0;
