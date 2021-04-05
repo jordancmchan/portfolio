@@ -92,7 +92,8 @@
           flex-direction: column-reverse;
 
           .skillsContainer{
-               column-gap: 10px;
+               display:grid;
+               
           }
 
           .resumeContainer{

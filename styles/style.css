@@ -472,8 +472,6 @@ header a:nth-child(2) {
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
   row-gap: 20px;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
   width: 100%;
 }
 
@@ -974,8 +972,8 @@ footer p {
             flex-direction: column-reverse;
   }
   .resumeSkillContainer .skillsContainer {
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
+    display: -ms-grid;
+    display: grid;
   }
   .resumeSkillContainer .resumeContainer {
     margin: 0 auto;
