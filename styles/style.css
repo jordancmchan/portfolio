@@ -1056,14 +1056,17 @@ footer p {
 
 @media (max-width: 768px) {
   header .headerContainer {
-    padding-left: 0;
+    padding-left: 10px;
   }
   .quickLinks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .aboutMeDescription h1, .aboutMeDescription h4, .aboutMeDescription p {
+  .aboutMeCont
+.aboutMeDescription h1, .aboutMeCont
+.aboutMeDescription h4, .aboutMeCont
+.aboutMeDescription p {
     text-align: center;
   }
   .resumeSkillContainer {
