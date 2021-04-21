@@ -1,0 +1,486 @@
+@import "mixin";
+@import "setup";
+
+* {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+img{
+  max-width: 100%;
+}
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: $lightBlue;
+  height: 80vh;
+
+  .headerContainer {
+    padding: 20vh 10%;
+    line-height:35px;
+  }
+  h1 {
+    margin: 0;
+    @include headerFont(8rem);
+    display: inline;
+    span{
+      @include headerFont(8rem);
+      text-decoration:  underline 3px solid $red;
+      color:$red;
+    }
+
+    &:first-child{
+      @include headerFont(4rem);
+    }
+  }
+  h2 {
+    @include bodyFont(3rem);
+    letter-spacing: 3px;
+    margin-top: 0;
+  }
+
+  a {
+    @include bodyFont(1rem);
+    font-size: 1.5rem;
+    color: $babyBlue;
+    text-decoration: none;
+    display: inline-block;
+    background-color: $red;
+    padding: 0px 50px;
+    border: 3px double $red;
+    transition-duration: 1s;
+
+    &:hover {
+      border: 3px double $babyBlue;
+      transition: 0.3s;
+    }
+
+    &:nth-child(2) {
+      margin-left: 10px;
+    }
+  }
+}
+
+.aboutMeSection {
+  background-image: url(/assets/layered-peaks-haikei.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $mediumBlue;
+  padding-top: 21vh;
+
+  h2 {
+    @include headerFont(4rem);
+    color: $babyBlue;
+    background-color: $red;
+    margin: 0;
+    z-index: -1;
+    padding-left:12.5%;
+    width: 25.6%;
+    height: 3.4rem;
+    line-height: 2.94rem;
+    letter-spacing: 3px;
+    border-bottom: 1.5px $babyBlue solid;
+  }
+
+  .aboutMeContainer {
+    padding-top: 10vh;
+    display:flex;
+    justify-content: center;    
+    align-items:flex-end;
+
+    img {
+      border-bottom: 3px solid $red;
+      height: auto;
+      max-width: 30%;
+    }
+
+    .aboutMeDescription {
+      background-color: $babyBlue;
+      border-bottom: 3px solid $red;
+      padding: 20px 0 20px 20px;
+      margin-left: 10px;
+
+      h1 {
+        @include headerFont(4rem);
+        margin: 0;
+        span{
+          @include headerFont(4rem);
+          border-bottom: 3px solid $red;
+          color:$red;
+        }
+      }
+      h4 {
+        @include headerFont(1rem);
+        // margin-top: 0;
+      }
+      p {
+        padding-right: 20px;
+        @include bodyFont(1.4rem);
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.skillSection {
+  background-image: url(/assets/layered-peaks-haikei-skill.png);
+  background-size: cover;
+  background-color: $darkBlue;
+  padding: 15vh 0 0;
+
+  h2 {
+    @include headerFont(4rem);
+    color: $babyBlue;
+    background-color: $red;
+    height: 3.4rem;
+    margin: 0;
+    line-height: 2.94rem;
+    margin-left: 50%;
+    letter-spacing: 3px;
+    text-align: center;
+    border-bottom: 1.5px $babyBlue solid;
+  }
+
+  .resumeSkillContainer{ 
+    display:flex;
+    justify-content: space-between;
+    margin-top: 15vh;
+    padding-bottom: 15vh;
+
+    .resumeContainer{
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      width: 20%;
+      padding-top: 5vh;
+      
+      h3{
+        @include headerFont(2.5rem);
+        margin-top: 0;
+        color: $babyBlue;
+        span{
+          @include headerFont(2.5rem);
+          background: linear-gradient(to top, $red 50%, transparent 50%);
+        }
+      }
+
+      i{
+        color: $babyBlue;
+        font-size: 1.5rem;
+      }
+      
+      a{
+        background-color: $red;
+        @include bodyFont(1.5rem);
+        text-decoration: none;
+        color: $babyBlue;
+        border: 3px double $red;
+        padding: 7px 25px;
+
+        &:hover {
+          border: 3px double $babyBlue;
+          transition: 0.3s;
+        }
+      }
+    }
+    .skillsContainer {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        row-gap: 20px;
+        width: 100%;
+        .skill {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          i {
+            font-size: 2.5rem;
+            color: $red;
+            background-color: $babyBlue;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-bottom: 1.5px solid $red;
+          }
+          li {
+            @include bodyFont(1.5rem);
+            list-style: none;
+            text-align: center;
+            margin-bottom: 10px;
+            color: $babyBlue;
+            text-decoration: underline $red 1.5px;
+          }
+        }
+      
+    }
+  }
+  }
+
+
+  
+
+.projectsContainer {
+  background-image: url(/assets/layered-peaks-haikei-project.png);
+  background-color: $babyBlue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-bottom: 5vh;
+
+  h2 {
+    @include headerFont(4rem);
+    color: $babyBlue;
+    background-color: $red;
+    margin: 0;
+    z-index: -1;
+    padding-left: 12.5%;
+    width: 21.6%;
+    height: 3.2rem * 2;
+    line-height: 3rem;
+    letter-spacing: 3px;
+    border-bottom: 1.5px $babyBlue solid;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .projectOne,
+  .projectTwo,
+  .projectThree {
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 0 10vh;
+    
+    img {
+      width: 300px;
+      transition: all 0.5s;
+      opacity: 0.5;
+      border-bottom: $red solid 3px; 
+
+      &:hover{
+        transform: scale(1.2);
+        opacity: 1;
+      }
+    }
+
+    .projectDescription {
+      width: 300px;
+      height: auto;
+      background-color: $babyBlue;
+      border-bottom: 3px solid $red;
+
+      h3 {
+        @include headerFont(3rem);
+        color: $red;
+        margin: 10px 0 10px;
+        height: 65px;
+      }
+
+      h4 {
+        @include bodyFont(1.5rem);
+        margin: 10px 0 10px;
+      }
+
+      p {
+        @include bodyFont(1.5rem);
+        line-height: 2.5rem;
+        margin: 10px 0 0px;
+        height: 175px;
+      }
+
+      .projectSkillContainer {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+
+        i {
+          font-size: 2.5rem;
+          color: $red;
+          padding-right: 10px;
+        }
+      }
+
+      .liveLinks {
+        padding: 10px 0 10px;
+
+        .devicon-github-original-wordmark {
+          padding: 9px 10px 11px 10px;
+        }
+
+        a {
+          color: $red;
+          text-align: center;
+          margin-right: 10px;
+
+          i {
+            background-color: $babyBlue;
+            padding: 10px;
+            font-size: 2rem;
+            border: 3px double $red;
+            transition-duration: 0.5s;
+
+            &:hover {
+              border: none;
+              border: 3px double $babyBlue;
+              color: $babyBlue;
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contactsPageContainer {
+  background-image: url(/assets/layered-peaks-haikei-footer.png);
+  background-color: $babyBlue;
+  background-size: cover;
+  background-position: bottom;
+  .contactsContainer {
+    display: flex;
+    justify-content: center;
+    form {
+         padding-bottom:20px;
+      fieldset {
+        border: none;
+
+        .nameEmailContainer {
+          @include bodyFont(1.5rem);
+
+          input[type="text"] {
+            margin-bottom: 7px;
+          }
+
+          input[type="text"],
+          input[type="email"] {
+            width: 100%;
+            border: none;
+            padding: 15px;
+            opacity: 0.5;
+            outline: none;
+            &:focus{
+              opacity: 1;
+            }    
+            &:hover{
+              opacity: 1;
+            }        
+          }
+        }
+        .messageContainer{
+          display: flex;
+          flex-direction: column;
+          textarea {
+            @include bodyFont(1.5rem);
+            margin-top: 30px;
+            border: none;
+            outline: none;
+            resize: none;
+            padding: 10px;
+            opacity: 0.5; 
+    
+            &:focus{
+              opacity: 1;
+            }
+            &:hover{
+              opacity: 1;
+            }
+          }
+    
+          button{
+            @include bodyFont(1.5rem);
+            background-color: $red;
+            color: $babyBlue;
+            border: 3px $red double;
+            padding: 5px 40px;
+            margin: 10px auto;
+            text-align: center;
+
+            &:hover{
+              border: 3px $babyBlue double;
+            }
+          }
+        }
+      }
+    }
+
+    .contactInfo {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      height: 160px;
+      border-bottom: 3px $red solid;
+      p{
+        @include bodyFont(1.5rem)
+      }
+      h2 {
+        margin: 0;
+        @include headerFont(4rem);
+        color:$red;
+      }
+      .contactLinks {
+           padding: 10px 0 10px;
+
+          a {
+          margin: 0 10px 0 0;
+          text-decoration: none;
+          
+          i{
+            color: $red;
+            font-size: 2rem;
+            background-color:$babyBlue;
+            border: 3px double $red;
+            padding: 11px 10px 10px 10px;
+            transition-duration: 0.5s;
+            
+            &:hover{
+              font-size: 2rem;
+              color:$babyBlue;
+              background-color:$red;
+              border: 3px double $babyBlue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #f1faee;
+  p {
+    @include headerFont(1rem);
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+  }
+}
+
+.fixedMenu{
+  position:absolute;
+  bottom: 50px;
+  right: 50px;
+  i{
+    visibility:visible; 
+    font-size: 2rem;
+    position:fixed;
+    padding: 5px 10px;
+    background-color: $babyBlue;
+    color: $red;
+    border-bottom: 3px $red solid;
+    border-top: 1px $red solid;
+    border-left: 1px $red solid;
+    border-right: 1px $red solid;
+    border-radius:5px;
+
+    &:hover{
+      background-color: $red;
+      color:$babyBlue;
+      border-bottom: 2px $babyBlue triple;
+    }
+  }
+}
+
+@import "responsive";

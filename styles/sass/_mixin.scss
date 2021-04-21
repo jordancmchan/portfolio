@@ -1,0 +1,15 @@
+@mixin headerFont($sizeValue) {
+     font-size: $sizeValue;
+     font-family: 'Oswald', sans-serif;
+}
+
+@mixin bodyFont($sizeValue){
+     font-size: $sizeValue;
+     font-family: 'Open Sans', sans-serif;
+}
+
+$red: #E63946;
+$babyBlue:#F1FAEE;
+$lightBlue: #A8DADC;
+$mediumBlue: #457B9D;
+$darkBlue: #1D3557;

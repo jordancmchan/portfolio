@@ -1,0 +1,255 @@
+@media (max-width: 1150px){
+     .projectsContainer{
+
+          .wrapper{
+               display: flex;
+               flex-direction: column;
+               align-items:stretch;
+               width: 100%;
+          }
+
+          h2{
+               margin-bottom: 15vh;
+          }
+          .projectOne{
+               .projectDescription{
+                    background-color: transparent;
+
+               }
+          }
+
+          .projectTwo{
+               .projectHeader{
+                    width: 30%;
+               }
+          }
+
+          .projectOne,
+          .projectTwo,
+          .projectThree{
+               display: flex;
+               justify-content: space-around;
+               flex-direction: row;
+               margin: 10px 0 20px;
+               .projectDescription{
+                    display:flex;
+                    justify-content:space-between;
+                    width: 700px;
+                    height: 200px;
+
+                    .projectHeader{
+                         display:flex;
+                         flex-direction:column;
+
+                         h3{
+                              margin: 0;
+                              height: auto;
+
+                         }
+
+                         .projectSkillContainer{
+                              display:grid;
+                              grid-template-columns: 33%33%33%;
+                              
+                         }
+                    }
+
+                    p{
+
+                         margin-top: 30px;
+                         width: 60%;
+                    }
+
+                    .liveLinks{
+                         display:flex;
+                         flex-direction:column;
+                         justify-content: space-evenly;
+                         padding: 0;
+                    }
+               }
+          }    
+     }
+}
+
+@media (max-width: 940px){
+     .wrapper{
+          width: 100%;
+     }
+
+     .aboutMeContainer{
+          flex-direction:column;   
+
+          img{
+               display: none;
+          }
+          
+          
+     }
+
+
+     .resumeSkillContainer{
+          padding-bottom: 0;
+          flex-direction: column-reverse;
+
+          .skillsContainer{
+               display:grid;
+               
+          }
+
+          .resumeContainer{
+               margin: 0 auto;
+
+               a{
+                    text-align:center;
+               }
+          }
+     }
+     
+     .projectsContainer{
+          .wrapper{
+               width: 70%;
+
+               .projectTwo{
+                    .projectHeader{
+                         width: 100%;
+                    }
+               }
+               .projectOne,
+               .projectTwo,
+               .projectThree{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content: center;
+                    text-align:center;
+                    img{
+                         width: 100%;
+                         height: auto;
+                    }
+                    .projectDescription{
+                         display:flex;
+                         flex-direction:column;
+                         width: auto;
+                         height: auto;
+
+                         h3{
+                              margin: 25px 0 10px;
+                         }
+
+                         p{
+                              padding: 10px 0 10px;
+                              height: auto;
+                              width: 100%;
+                         }
+          
+                         .projectSkillContainer{
+                              display: inline;
+                         }
+
+                         .liveLinks{
+                              display: inline-block;
+                              padding-bottom: 10px;
+                         }
+                    }
+               }
+               
+          }
+
+          
+     }
+     
+     .contactLinks{
+          display:flex;
+          align-items:center;
+     }
+
+}
+
+@media (max-width: 768px){
+
+     header{
+          .headerContainer{
+               padding-left:10px;
+          }
+     }
+
+     .quickLinks{
+          display:flex;
+     }
+
+     .aboutMeCont
+
+     .aboutMeDescription{
+          h1, h4, p{
+               text-align:center;
+          }
+     }
+
+     .resumeSkillContainer{
+
+          display:flex;
+          flex-direction:column-reverse;
+          
+          h3{
+               text-align:center;
+          }
+          .resumeContainer{
+               margin: 0 auto;
+          }
+
+
+     }
+     .projectsContainer{
+          padding-bottom: 0;
+     }
+
+     .contactsContainer{
+          display:flex;
+          flex-direction:column-reverse;
+
+
+          fieldset{
+               display: none;
+          }
+
+          .contactInfo{
+               width: 100%;
+               height: auto;
+     
+               h2{
+                    text-align:center;
+               }
+               .contactLinks{
+                    justify-content: space-around;
+               }
+          }
+     }
+     
+
+}
+
+@media (max-width: 480px) {
+     header{
+          .wrapper{
+               width: 100%;
+          }
+          .headerContainer{
+               padding: 20vh 10px 20vh;
+
+               h1{
+                    @include headerFont(4rem)
+               }
+               .quickLinks{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content: center;
+                    a{
+                         text-align:center;
+                         &:nth-child(2) {
+                              margin-left: 0px;
+                              margin-top: 5px;
+                            }
+                    }
+               }
+          }
+     }
+}
