@@ -258,6 +258,7 @@ header {
       transition: all 0.5s;
       opacity: 0.5;
       border-bottom: $red solid 3px; 
+      height: 175px;
 
       &:hover{
         transform: scale(1.2);
