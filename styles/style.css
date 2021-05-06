@@ -588,7 +588,7 @@ header a:nth-child(2) {
   font-size: 3rem;
   font-family: 'Oswald', sans-serif;
   color: #E63946;
-  margin: 10px 0 10px;
+  margin: 20px 0 10px;
   height: 65px;
 }
 
@@ -633,7 +633,7 @@ header a:nth-child(2) {
 .projectsContainer .projectOne .projectDescription .liveLinks,
 .projectsContainer .projectTwo .projectDescription .liveLinks,
 .projectsContainer .projectThree .projectDescription .liveLinks {
-  padding: 10px 0 10px;
+  padding: 30px 0 10px;
 }
 
 .projectsContainer .projectOne .projectDescription .liveLinks .devicon-github-original-wordmark,
@@ -760,6 +760,7 @@ header a:nth-child(2) {
   padding: 5px 40px;
   margin: 10px auto;
   text-align: center;
+  cursor: pointer;
 }
 
 .contactsPageContainer .contactsContainer form fieldset .messageContainer button:hover {
@@ -833,6 +834,7 @@ footer p {
   position: absolute;
   bottom: 50px;
   right: 50px;
+  cursor: pointer;
 }
 
 .fixedMenu i {
